@@ -11,7 +11,7 @@
   <div class="grain" aria-hidden="true"></div>
   <header class="topbar">
     <a class="brand" href="#top" aria-label="Confort the Soul home"><span class="brand-mark">✦</span><span>Confort<br><i>the soul</i></span></a>
-    <nav><a href="#reading">Reading</a><a href="#library">Card library</a><a href="#history">History</a></nav>
+    <nav><a href="#reading">Reading</a><a href="#library">Card library</a><a href="#study">Study</a><a href="#history">History</a></nav>
     <button class="quiet-btn" id="newReadingBtn">New reading <span>↗</span></button>
   </header>
 
@@ -70,6 +70,13 @@
       <div class="library-grid" id="libraryGrid"></div>
     </section>
 
+    <section class="study-section" id="study">
+      <div class="section-heading"><div><p class="eyebrow">Learn the language of the deck</p><h2>Study with <em>flashcards</em></h2></div><p>See the card first, then test your memory. Your progress stays on this device.</p></div>
+      <div class="study-toolbar"><div class="study-filter" id="studyFilters"><button class="tab active" data-study-filter="all">All 78</button><button class="tab" data-study-filter="major">Major arcana</button><button class="tab" data-study-filter="minor">Minor arcana</button><button class="tab" data-study-filter="practice">Still learning</button></div><div class="study-progress"><span id="studyProgress">0 known</span><span class="progress-track"><i id="studyProgressBar"></i></span></div></div>
+      <div class="flashcard-wrap"><article class="flashcard" id="flashcard"><div class="flash-front"><p class="flash-label">CARD <span id="flashCounter">01 / 78</span></p><div class="flash-symbol" id="flashSymbol">☽</div><h3 id="flashName">The Fool</h3><p id="flashHint">Say the card’s story in your own words.</p></div><div class="flash-back hidden" id="flashBack"><p class="flash-label">THE CARD'S LANGUAGE</p><div class="flash-facts" id="flashFacts"></div><p class="flash-story" id="flashStory"></p><div class="flash-meanings"><div><small>UPRIGHT</small><p id="flashMeaning"></p></div><div><small>REVERSED</small><p id="flashReversed"></p></div></div></div></article></div>
+      <div class="study-actions"><button class="secondary-btn" id="revealBtn">Reveal the answer <span>↓</span></button><button class="study-know hidden" id="knowBtn">I know this card <span>✓</span></button><button class="study-again hidden" id="practiceBtn">Practice again <span>↺</span></button><button class="study-next" id="nextFlashBtn">Next card <span>→</span></button></div>
+      <p class="study-note">Correspondences follow a common Rider-Waite / Golden Dawn-style system. Other tarot traditions may assign different planetary, zodiac, or elemental links.</p>
+    </section>
     <section class="history-section" id="history"><div class="section-heading"><div><p class="eyebrow">Your private journal</p><h2>Past <em>readings</em></h2></div><button class="text-btn danger" id="clearHistory">Clear history</button></div><div id="historyList" class="history-list"><div class="empty-history">Saved readings will stay in this browser, on this device.</div></div></section>
   </main>
   <footer><span>Comfort the soul</span><span>For reflection, not prediction.</span><span>Made to work offline.</span></footer>
